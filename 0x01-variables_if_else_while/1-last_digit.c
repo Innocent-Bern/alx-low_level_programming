@@ -1,8 +1,13 @@
-include <stdlib.h>
+#include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+* main - Entry point
+* Description: checks on the last digit of the assigned var
+* Return: Always 0 (success)
+*/
+
 int main(void)
 {
 	int n;
@@ -17,7 +22,7 @@ int main(void)
 	} else if (last == 0)
 	{ 
 		printf( "Last digit of %d is 0 and is 0\n", n);
-	} else if ( last < 6 && != 0)
+	} else if ( last < 6 && last != 0)
 	{
 		printf( "Last digit of %d is %d and is less than 6 and not 0\n", n, last);
 	}
