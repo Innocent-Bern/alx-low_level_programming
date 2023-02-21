@@ -2,7 +2,8 @@
 /**
 * _islower - Entry point
 * Description: checks if int c letter is lowercase
-* Return: Always 0 (success)
+* @c: the integer value it receives
+* Return: 1 if true. 0 if false.
 */
 int _islower(int c)
 {
@@ -14,5 +15,5 @@ int _islower(int c)
     {
     return (1);
     }
-return (0);
+    return (0);
 }
