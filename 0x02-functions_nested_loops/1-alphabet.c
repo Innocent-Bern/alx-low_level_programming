@@ -1,20 +1,14 @@
 #include "main.h"
 /**
-* main - Entry point
-* Description: prints _putchar with the putchar() funtion
+* print_alphabet - Entry point
+* Description: prints the alphabet without using the standard library
 * Return: Always 0 (success)
 */
-int main(void)
+void print_alphabet(void)
 {
-	char str[] = "_putchar\n";
-	int i = 0;
-
-	while (str[i] != '\0')
+	for(char letter = "a"; letter <= "z"; letter++)
 	{
-		char c = str[i];
-
-		_putchar(c);
-		i++;
+		_putchar(letter);
 	}
-	return (0);
+	_putchar("\n");
 }
