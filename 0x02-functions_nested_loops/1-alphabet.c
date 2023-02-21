@@ -1,4 +1,6 @@
 #include "main.h"
+#include <unistd.h>
+
 /**
 * print_alphabet - Entry point
 * Description: prints the alphabet without using the standard library
