@@ -21,7 +21,7 @@ void jack_bauer(void)
             }
             else if (hours > 10)
             {
-                int str[] = hours;
+                int str[] = {hours};
 	            int i = 0;
 
 	            while (str[i] != '\0')
@@ -40,7 +40,7 @@ void jack_bauer(void)
             }
             else if (minute > 10)
             {
-                int str[] = minute;
+                int str[] = {minute};
 	            int i = 0;
 
 	            while (str[i] != '\0')
