@@ -9,6 +9,8 @@
 void times_table(void)
 {
     int n, j, multiple;
+    
+    multiple = n * j;
 
     for (n = 0; n <= 9; n++)
     {
