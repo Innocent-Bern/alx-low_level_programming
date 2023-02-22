@@ -6,6 +6,5 @@
 */
 int add(int j, int n)
 {
-    _putchar((j+n) +'0');
 	return (j + n);
 }
