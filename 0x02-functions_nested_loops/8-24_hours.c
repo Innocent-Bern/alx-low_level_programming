@@ -19,18 +19,10 @@ void jack_bauer(void)
                 _putchar(hours + '0');
                 _putchar(':');
             }
-            else if (hours > 10)
+            else if (hours >= 10)
             {
-                int str[] = {hours};
-	            int i = 0;
-
-	            while (str[i] != '\0')
-	            {
-		            char c = str[i];
-
-		            _putchar(c);
-		            i++;
-                }
+                _putchar( hours / 10 + '0');
+                _putchar( hours % 10 + '0');
                 _putchar(':');
             }
             if (minute < 10)
@@ -38,18 +30,10 @@ void jack_bauer(void)
                 _putchar('0');
                 _putchar(minute + '0');
             }
-            else if (minute > 10)
+            else if (minute >= 10)
             {
-                int str[] = {minute};
-	            int i = 0;
-
-	            while (str[i] != '\0')
-	            {
-		            char c = str[i];
-
-		            _putchar(c);
-		            i++;
-                }
+                _putchar( minute / 10 + '0');
+                _putchar( minute % 10 + '0');
             }
             _putchar('\n');
         }
