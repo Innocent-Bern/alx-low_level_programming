@@ -16,8 +16,8 @@ void times_table(void)
         {
             if(n * j > 9)
             {
-                _putchar((n * j) / 10 + '0');
-                _putchar((n * j) % 10 + '0');
+                _putchar(n * j / 10 + '0');
+                _putchar(n * j % 10 + '0');
             }
             _putchar(n*j + '0');
             if(j == 9)
