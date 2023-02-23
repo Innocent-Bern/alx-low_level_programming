@@ -35,16 +35,29 @@ int _putchar(char c)
 //     }
 // }
 
-int main(void)
+void more_numbers(void)
 {
     int i;
+    int y;
 
-    for (i = 0; i <=9; i++)
+    for (y = 0; y < 10; y++)
     {
-        if (i == 2 || i == 4)
-            continue;
-        putchar(i + '0');
+        for (i = 0; i <= 14; i++)
+        {
+            if(i > 9)
+            {
+                putchar(i / 10 + '0');
+                putchar(i % 10 + '0');
+            } else 
+            {
+                putchar(i + '0');
+            }
+        }
+        putchar('\n');
     }
-    putchar('\n');
+}
+int main(void)
+{
+    more_numbers();
     return (0);
 }
