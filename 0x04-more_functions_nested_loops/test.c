@@ -1,28 +1,29 @@
 #include <stdio.h>
 
-int main(void)
+void print_triangles(int size)
 {
     int i;
+    int y;
 
-    for (i = 1; i <=100; i++)
+    if (size == 0)
     {
-        if (i % 15 == 0)
-        {
-          puts ("FizzBuzz");
-        }
-        else if (i % 5 == 0)
-        {
-            puts ("Buzz");
-        }
-        else if (i % 3 == 0)
-        {
-            puts ("Fizz");
-        }
-        else
-        {
-            printf("%d", i);
-            putchar('\n');
-        }
+        putchar('#');
+        putchar('\n');
+        return;
     }
+
+    for (i = 0; i <= size; i++)
+    {
+        for (y = 0; y <= size; y++)
+        {
+            putchar('#');
+        }
+        putchar('\n');
+    }
+}
+
+int main(void)
+{
+    print_triangles(3);
     return (0);
 }
