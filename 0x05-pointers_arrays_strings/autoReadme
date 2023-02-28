@@ -22,4 +22,4 @@ if [ "$line" = "$lastLine" ]; then
 fi
 n=$((n+1))
 done < $filename
-# cat -n -E README.md
+cat -n -E README.md

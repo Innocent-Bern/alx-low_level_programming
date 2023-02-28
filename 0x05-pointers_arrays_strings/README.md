@@ -30,3 +30,24 @@
 * Description: Reverses a string
 * @s: char pointer string input parameter
 * Return: void
+## 6-puts2.c
+* puts2 - Entry point
+* Description: Prints every other string
+* @str: input string
+* Return: void
+## 7-puts_half.c
+* puts_half - Entry point
+* Description: Prints the second half of a string
+* @str: input string
+* Return: void
+## 8-print_array.c
+* print_array - Entry point
+* Description: Prints n elements of an array of intergers
+* @a: interger input
+* @n: interger input
+* Return: void
+## 9-strcpy.c
+* char *_strcpy - A function that copies the string pointed to by src, including the terminating null byte (0), to the buffer pointed to by dest
+* @dest: copy to
+* @src: copy from
+* Return: char
