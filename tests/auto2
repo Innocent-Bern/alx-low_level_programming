@@ -12,7 +12,7 @@ lastLine=$(grep -i "^ \* Return" $filename | xargs)
 n=1
 while read line; do
 if [[ "$line" == \** ]]; then
-    echo -e "$line" | tr "^ \*" " " | xargs >> README.md
+    echo -e "$line" | tr "^ \*" " " >> README.md
 fi
 if [ "$line" = "$lastLine" ]; then
     break
