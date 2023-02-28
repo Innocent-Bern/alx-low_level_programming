@@ -1,0 +1,4 @@
+#i/bin/bash
+echo "Type word to find"
+read fn
+find . -exec grep -l "$fn" {} \;
