@@ -7,16 +7,19 @@ read filename
 echo -e "## ./$filename" >> README.md
 
 # grab the last comment line with Return keyword
-lastLine=$(grep -i "^ \* Return" $filename | xargs)
-
+lastLine=$(grep -i "^\* Return" $filename | xargs)
 # loop through file 
 n=1
 while read line; do
 if [[ "$line" == \** ]]; then
     echo -e "$line" >> README.md
+# else
+#     echo "Match not found"
 fi
+# echo "$line"
 if [ "$line" = "$lastLine" ]; then
     break
 fi
 n=$((n+1))
 done < $filename
+cat -n -E README.md
