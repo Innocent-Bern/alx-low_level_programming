@@ -1,7 +1,7 @@
 ## ./comments.c
-_strncat - Concatenates two strings using at mostn
-an inputted number of bytes from src.n
-@dest: The string to be appended upon.n
-@src: The string to be appended to dest.n
-@n: The number of bytes from src to be appended to dest.n
-Return: A pointer to the resulting string dest.n
+- e _strncat - Concatenates two strings using at mostn
+- e an inputted number of bytes from src.n
+- e @dest: The string to be appended upon.n
+- e @src: The string to be appended to dest.n
+- e @n: The number of bytes from src to be appended to dest.n
+- e Return: A pointer to the resulting string dest.n
