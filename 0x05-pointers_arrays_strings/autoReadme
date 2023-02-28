@@ -4,7 +4,7 @@
 echo "Enter file name"
 read filename
 
-echo -e "## ./$filename" >> README.md
+echo -e "## $filename" >> README.md
 
 # grab the last comment line with Return keyword
 lastLine=$(grep -i "^\* Return" $filename | xargs)
@@ -22,4 +22,4 @@ if [ "$line" = "$lastLine" ]; then
 fi
 n=$((n+1))
 done < $filename
-cat -n -E README.md
+# cat -n -E README.md
