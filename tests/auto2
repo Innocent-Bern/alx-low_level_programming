@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# get the filename from the user
+echo "Enter file name"
+read filename
+
+echo -e "## $filename" >> README.md
+# grab the last comment line with Return keyword
+lastLine=$(grep -i "^ \* Return" $filename | xargs)
+
+# loop through file 
+n=1
+while read line; do
+if [[ "$line" == \** ]]; then
+    echo -e "$line" | tr "^ \*" " " | xargs >> README.md
+fi
+if [ "$line" = "$lastLine" ]; then
+    break
+fi
+n=$((n+1))
+done < $filename

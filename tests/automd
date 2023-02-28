@@ -1,4 +1,4 @@
 #!/bin/bash
 echo -e "# $1" > README.md
-grep -i "^/" "$1" | tr "/**" " " >> README.md
-grep -i "^ \*" "$1" | tr " *" " " >> README.md
+# grep -i "^/" "$1" | tr -d "^/\*\*" >> README.md
+grep -i "^ \* Return" "$1" | tr "^ \*" " " | xargs >> README.md
