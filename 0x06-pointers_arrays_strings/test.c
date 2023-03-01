@@ -13,26 +13,17 @@ int main(void)
     char *strpt = &str[0];
     int strlen, destlen, i;
 
-    strlen = 0;
     destlen = 0;
-    i = 0;
-    // get len of the strings
-    while (str[strlen])
+    strlen = 0;
+    while (strpt[strlen])
     {
         strlen++;
     }
-
-    while (dest[destlen])
+    while (destpt[destlen])
     {
+        *(strpt + (strlen + destlen)) = destpt[destlen];
         destlen++;
     }
-
-    while (dest[i])
-    {
-        *(strpt + (strlen + i)) = destpt[i];
-        i++;
-    }
-    // printf("%d\n%d\n", strlen, destlen);
     printf("%s\n", strpt);
     return (0);
 }
