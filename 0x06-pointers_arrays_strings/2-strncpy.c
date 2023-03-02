@@ -9,16 +9,16 @@
 */
 
 char *_strncpy(char *dest, char *src, int n)
-{
+{ 
     int destlen, srclen;
 
     destlen = 0;
     srclen = 0;
 
-    for (srclen = 0; srclen <= n; srclen++)
+    for (srclen = 0; src[srclen] && srclen < n; srclen++)
     {
-        *(dest + srclen) = src[srclen];
+        dest[srclen] = src[srclen];
     }
-    // *(dest + (n+1)) = '\0';
+    *(dest + (n+1)) = '\0';
     return (dest);
 }
