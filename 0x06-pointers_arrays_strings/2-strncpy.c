@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _*strcat : Function that copies string src up to n to the dest string
+* _strncpy : Function that copies string src up to n to the dest string
 * @dest: input string
 * @src: input string
 * @n: input inerger

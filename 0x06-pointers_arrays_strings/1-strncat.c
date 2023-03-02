@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _*strcat : Function that appends the src string to the dest string
+* _strcat : Function that appends the src string to the dest string
 * @dest: input string
 * @src: input string
 * @n: input inerger
