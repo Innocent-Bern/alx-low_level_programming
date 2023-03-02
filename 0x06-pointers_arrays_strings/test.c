@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 char *_strcat(char *dest, char *src)
 {
@@ -13,23 +14,13 @@ int main(void)
     char *strpt = &str[0];
     int strlen, destlen, i;
 
-    destlen = 0;
-    strlen = 0;
     i = 2;
-    while (strpt[strlen])
+
+    for (strlen = 0; strlen <= i; strlen++)
     {
-        strlen++;
+        *(destpt + strlen) = strpt[strlen];
     }
-    while (destpt[destlen])
-    {
-        *(strpt + (strlen + destlen)) = destpt[destlen];
-        destlen++;
-        if (destlen > i)
-        {
-            *(strpt + (strlen +destlen)) = 0;
-            break;
-        }
-    }
-    printf("%s\n", strpt);
+    *(destpt + (i+1)) = '\0';
+    printf("%s\n", destpt);
     return (0);
 }
