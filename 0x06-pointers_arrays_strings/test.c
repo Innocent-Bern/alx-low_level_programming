@@ -14,13 +14,13 @@ int main(void)
     char *strpt = &str[0];
     int strlen, destlen, i;
 
-    i = 2;
+    i = 1;
 
     for (strlen = 0; strlen <= i; strlen++)
     {
         *(destpt + strlen) = strpt[strlen];
     }
-    *(destpt + (i+1)) = '\0';
+    *(destpt + (i)) = '\0';
     printf("%s\n", destpt);
     return (0);
 }
