@@ -8,7 +8,7 @@
 * Return : pointer to the resulting string dest
 */
 
-char *_strncpy(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n)
 {
     int destlen, srclen;
 
@@ -19,6 +19,6 @@ char *_strncpy(char *dest, char *src, int n);
     {
         *(dest + srclen) = src[srclen];
     }
-    *(destpt + (n+1)) = '\0';
+    *(dest + (n+1)) = '\0';
     return (dest);
 }
