@@ -15,6 +15,7 @@ int main(void)
 
     destlen = 0;
     strlen = 0;
+    i = 2;
     while (strpt[strlen])
     {
         strlen++;
@@ -23,6 +24,11 @@ int main(void)
     {
         *(strpt + (strlen + destlen)) = destpt[destlen];
         destlen++;
+        if (destlen > i)
+        {
+            *(strpt + (strlen +destlen)) = 0;
+            break;
+        }
     }
     printf("%s\n", strpt);
     return (0);
