@@ -1,18 +1,13 @@
 #!/bin/bash
 
 # get the filename from the user
-read -p "Enter filename seperated by spaces " my_files
+echo "Enter file name"
+read filename
 
-for filename in $my_files
-do
-echo $filename
 echo -e "## $filename" >> README.md
 
 # grab the last comment line with Return keyword
-lastLineA=$(grep -i "^\* Return" $filename | xargs)
-lastLineB=$(grep -i "^ \* Return" $filename | xargs)
-echo "$lastLineA"
-echo "$lastLineB"
+lastLine=$(grep -i "^\* Return" $filename | xargs)
 # loop through file 
 n=1
 while read line; do
@@ -21,14 +16,10 @@ if [[ "$line" == \** ]]; then
 # else
 #     echo "Match not found"
 fi
-
-if [ "$line" = "$lastLineA" ] || [ "$line" = "$lastLineB" ]
-then
-    echo "Yes"
+# echo "$line"
+if [ "$line" = "$lastLine" ]; then
     break
 fi
 n=$((n+1))
-
 done < $filename
-done
 cat -n -E README.md
