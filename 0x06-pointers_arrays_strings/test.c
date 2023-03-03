@@ -1,43 +1,25 @@
 #include <stdio.h>
 #include <string.h>
-int _strcmp(char *s1, char *s2)
+char *cap_string(char *str)
 {
-    int check = 0;
-    int len1, len2;
+	int index = 0;
 
-    len1 = 0;
-    len2 = 0;
-
-    while (s1[len1])
-        len1++;
-    while (s2[len2])
-        len2++;
-
-    if (len1 != len2)
-    {
-        return (1);
-    }
-    while (s1[check] && s2[check])
-    {
-        if (s1[check] == s2[check])
+	while (str[index])
+	{
+        if (str[index] >= 'a' && str[index] <= 'z')
         {
-            continue;
-        }else
-        {
-            return (1);
+            str[index] -= 32;
         }
-        check++;
-    }
-    return (0);
+		index++;
+	}
+
+	return (str);
 }
 
 int main(void)
 {
-    char dest[] = "World";
-    char *destpt = &dest[0];
-    char str[] = "Hello";
-    char *strpt = &str[0];
+    char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
 
-    _strcmp(destpt, strpt);
+    printf(cap_string(str));
     return (0);
 }
