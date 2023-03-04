@@ -1,0 +1,25 @@
+#!/bin/bash
+
+read -p "Enter filename followed by spaces: " my_files
+
+for filename in $my_files
+do
+    echo -e $filename
+    echo -e "## $filename" >> README.md
+
+    lastLineA=$(grep -i "^\* Return" $filename | xargs)
+    lastLineB=$(grep -i "^ \* Return" $filename | xargs)
+
+    n=1
+    while read line ; do
+        if [[ "$line" == \** ]]; then
+            echo -e "$line" >> README.md
+            if [[ "$line" == "$lastLineA" ]] || [[ "$line" == "$lastLineB" ]]; then
+                echo "Breaking"
+                break
+            fi
+        fi
+        n=$((n+1))
+    done < $filename
+done
+cat -n -E README.md
