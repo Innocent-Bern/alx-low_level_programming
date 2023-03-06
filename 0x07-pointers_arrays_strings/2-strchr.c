@@ -18,6 +18,9 @@ char *_strchr(char *s, char c)
         {
             rtnstr = &s[i];
             break;
+        } else if (s[i] == '\0')
+        {
+            return ('\0');
         }
         i++;
     }
