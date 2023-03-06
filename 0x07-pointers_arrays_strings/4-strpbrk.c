@@ -9,25 +9,17 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-    int i = 0;
-    int y = 0;
-    int foundIndex;
-    char *rtnpointer;
-    for (i = 0; s[i]; i++)
+    int i;
+    while (*s)
     {
-        for (y = 0; accept[y]; y++)
+        for (i = 0; accept[i]; i++)
         {
-            if (s[i] == accept[y])
+            if (*s == accept[i])
             {
-                foundIndex = i;
-                rtnpointer = &s[foundIndex];
-                break;
+                return (s);
             }
         }
-        if (rtnpointer[0] != '\0')
-        {
-            break;
-        }
+        s++;
     }
-    return (rtnpointer);
+    return ('\0');
 }
