@@ -21,3 +21,9 @@
 * @s: string input
 * @accept: string input
 * Return : the number of bytes in the initial segment of s which consist only of bytes from accept
+
+## 4-strpbrk.c
+* _strpbrk : Function that function that searches a string for any of a set of bytes
+* @s: string input
+* @accept: string input
+* Return : A pointer to the byte in s that matches one of the bytes in accept, or NULL if no such byte is found
