@@ -19,7 +19,6 @@ char *_strpbrk(char *s, char *accept)
         {
             if (s[i] == accept[y])
             {
-                printf("%c\n", accept[y]);
                 foundIndex = i;
                 rtnpointer = &s[foundIndex];
                 break;
