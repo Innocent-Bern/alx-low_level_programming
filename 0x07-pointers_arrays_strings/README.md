@@ -16,3 +16,8 @@
 * @s: string input
 * @c: character input
 * Return : A pointer to the first occurrence of the character c in the string s
+## 3-strspn.c
+* _strspn : Function that gets the length of a prefix substring
+* @s: string input
+* @accept: string input
+* Return : the number of bytes in the initial segment of s which consist only of bytes from accept
