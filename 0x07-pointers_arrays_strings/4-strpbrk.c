@@ -19,13 +19,16 @@ char *_strpbrk(char *s, char *accept)
         {
             if (s[i] == accept[y])
             {
+                printf("%c\n", accept[y]);
                 foundIndex = i;
+                rtnpointer = &s[foundIndex];
                 break;
             }
         }
-        if (foundIndex)
+        if (rtnpointer[0] != '\0')
+        {
             break;
+        }
     }
-    rtnpointer = &s[foundIndex];
     return (rtnpointer);
 }

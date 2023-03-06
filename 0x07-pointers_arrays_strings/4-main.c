@@ -18,21 +18,24 @@ char *_strpbrk(char *s, char *accept)
         {
             if (s[i] == accept[y])
             {
+                printf("%c\n", accept[y]);
                 foundIndex = i;
+                rtnpointer = &s[foundIndex];
                 break;
             }
         }
-        if (foundIndex)
+        if (rtnpointer[0] != '\0')
+        {
             break;
+        }
     }
-    rtnpointer = &s[foundIndex];
     return (rtnpointer);
 }
 
 int main(void)
 {
     char *s = "Read the fucking manual";
-    char *f = "the";
+    char *f = "Read";
     char *t;
 
     t = _strpbrk(s, f);
