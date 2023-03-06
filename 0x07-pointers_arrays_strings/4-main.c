@@ -18,7 +18,6 @@ char *_strpbrk(char *s, char *accept)
         {
             if (s[i] == accept[y])
             {
-                printf("%c\n", accept[y]);
                 foundIndex = i;
                 rtnpointer = &s[foundIndex];
                 break;
@@ -34,8 +33,8 @@ char *_strpbrk(char *s, char *accept)
 
 int main(void)
 {
-    char *s = "Read the fucking manual";
-    char *f = "Read";
+    char *s = "Hello, world";
+    char *f = "World";
     char *t;
 
     t = _strpbrk(s, f);
