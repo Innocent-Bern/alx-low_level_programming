@@ -21,7 +21,6 @@ do
                 if [[ "$line" == "$lastLineA" ]] || [[ "$line" == "$lastLineB" ]]; then
                     break
                 fi
-        cat -n -E README.md
     fi
             n=$((n+1))
         done < $filename
@@ -29,3 +28,4 @@ do
         echo -e "$filename does not exist."
     fi
 done
+cat -n -E README.md
