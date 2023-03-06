@@ -12,15 +12,12 @@ char *_strchr(char *s, char c)
     int i = 0;
     char *rtnstr;
 
-    while (s[i])
+    while (s[i] != '\0')
     {
         if (s[i] == c)
         {
             rtnstr = &s[i];
             break;
-        } else if (s[i] == '\0')
-        {
-            return ('\0');
         }
         i++;
     }
