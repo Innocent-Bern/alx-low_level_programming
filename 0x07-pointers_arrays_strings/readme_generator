@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Request the filenames and read them into my_files
+read -p "Enter filename followed by spaces: " my_files
+
+for filename in $my_files
+do
+    if [ -f "$filename" ]; then #check if the file exists in the current directory.
+        echo -e $filename
+        echo -e "## $filename" >> README.md
+
+        #grab the lines with the Return keyword
+        lastLineA=$(grep -i "^\* Return" $filename | xargs)
+        lastLineB=$(grep -i "^ \* Return" $filename | xargs)
+
+        # loop through the file adding the lines to the README.md
+        n=1
+        while read line ; do
+            if [[ "$line" == \** ]]; then
+                echo -e "$line" >> README.md
+                if [[ "$line" == "$lastLineA" ]] || [[ "$line" == "$lastLineB" ]]; then
+                    break
+                fi
+        cat -n -E README.md
+    fi
+            n=$((n+1))
+        done < $filename
+    else
+        echo -e "$filename does not exist."
+    fi
+done
