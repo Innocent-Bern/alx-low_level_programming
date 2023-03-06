@@ -31,8 +31,8 @@ char *_strpbrk(char *s, char *accept)
 
 int main(void)
 {
-    char *s = "hello, world";
-    char *f = "world";
+    char *s = "Read the fucking manual";
+    char *f = "the";
     char *t;
 
     t = _strpbrk(s, f);
