@@ -32,3 +32,7 @@
 * @haystack: string input
 * @needle: string input
 * Return : A pointer to the beginning of the located substring, or NULL if the substring is not found.
+## 7-print_chessboard.c
+* _print_chessboard : Function prints a chess board.
+* @a: string input
+* Return : void
