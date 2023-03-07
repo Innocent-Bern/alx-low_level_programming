@@ -11,6 +11,11 @@ char *_strstr(char *haystack, char *needle)
 {
     int needleLen = 0;
     int i = 0;
+    if (*needle == 0)
+    {
+        return (haystack);
+    }
+    
     while (needle[needleLen])
     {
         needleLen++;
