@@ -27,3 +27,8 @@
 * @s: string input
 * @accept: string input
 * Return : A pointer to the byte in s that matches one of the bytes in accept, or NULL if no such byte is found
+## 5-strstr.c
+* _strstr : Function that function that locates a substring
+* @haystack: string input
+* @needle: string input
+* Return : A pointer to the beginning of the located substring, or NULL if the substring is not found.
