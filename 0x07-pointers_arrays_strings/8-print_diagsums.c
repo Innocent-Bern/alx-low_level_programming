@@ -8,21 +8,23 @@
 * Return : void
 */
 
-void print_diagsums(int *a, int size)
+\void print_diagsums(int *a, int size)
 {
-    int x, y, trackA, trackB, sumLeft, sumRight;
+    int x, sumLeft, sumRight;
 
-    trackA = 0;
-    trackB = size;
     sumLeft = 0;
     sumRight = 0;
 
     for (x = 0; x < size; x++)
     {
-        sumLeft += *a[x][trackA];
-        sumRight += *a[x][trackB];
-        trackA++;
-        trackB--;
+        sumLeft += a[x];
+        a += size;
+    }
+    a -=size;
+    for (x = 0; x < size; x++)
+    {
+        sumRight += a[x];
+        a -= size;
     }
     printf("%d, %d\n", sumLeft, sumRight);
 }

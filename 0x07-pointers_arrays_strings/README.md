@@ -36,3 +36,8 @@
 * _print_chessboard : Function prints a chess board.
 * @a: string input
 * Return : void
+## 8-print_diagsums.c
+* _print_chessboard : Function that prints the sum of the two diagonals of a square matrix of integers
+* @a: string input
+* @size: integer input
+* Return : void
