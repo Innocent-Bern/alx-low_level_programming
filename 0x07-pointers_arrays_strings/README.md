@@ -41,3 +41,8 @@
 * @a: string input
 * @size: integer input
 * Return : void
+## 100-set_string.c
+* _print_chessboard : Function that sets the value of a pointer to a char.
+* @s: string input
+* @to: string input
+* Return : void
