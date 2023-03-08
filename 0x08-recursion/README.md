@@ -13,3 +13,14 @@
 * Description : Funtion that prints the length of a string
 * @s: input string
 * Return : Void.
+## 3-factorial.c
+* factorial : Entry point
+* Description : Funtion that prints the factorial of n
+* @n: input integer
+* Return : int value
+## 4-pow_recursion.c
+* int _pow_recursion : Entry point
+* Description : Funtion that the value of x raised to the power of y
+* @x: input integer
+* @y: input integer
+* Return : int value
