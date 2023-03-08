@@ -22,7 +22,7 @@ void rev(char *s, int myStrLen)
 {
     if (myStrLen >= 0)
     {
-        putchar(*(s + myStrLen));
+        _putchar(*(s + myStrLen));
         rev(s, myStrLen - 1);
     }
 }
