@@ -6,23 +6,32 @@
  *
  * Return: Always 0.
  */
-void set_last(char *s, char **ls)
-{
-    if (*s == '\0')
-    {
-        *ls = s - 2;
-        return;
-    } else 
-    {
-        putchar(*s);
-        set_last( s+ 1, ls);
-    }
-}
+
 void _print_rev_recursion(char *s)
 {
-    char **last;
-    set_last(s, last);
-    putchar(**last);
+    int mystrlen = 0;
+    void _strlen(char *s)
+    {
+        if (*s == '\0')
+            return;
+        mystrlen += 1;
+        _strlen(s+1);
+    }
+    _strlen(s);
+    void rev(char *s)
+    {
+        if (mystrlen >= 0)
+        {
+            putchar(*(s + mystrlen - 1));
+            printf("%d\n", mystrlen);
+            mystrlen--;
+            rev(s + mystrlen);
+        }else
+        {
+            return;
+        }
+    }
+    rev(s);
 }
 
 int main(void)

@@ -6,17 +6,17 @@
 * @s: input string
 * Return : Void.
 */
+void _strlen(char *s, int mystrlen)
+{
+    if (*s == '\0')
+        return;
+    mystrlen += 1;
+    _strlen(s+1);
+}
 
 int _strlen_recursion(char *s)
 {
     int mystrlen = 0;
-    void _strlen(char *s)
-    {
-        if (*s == '\0')
-            return;
-        mystrlen += 1;
-        _strlen(s+1);
-    }
-    _strlen(s);
+    _strlen(s, mystrlen);
     return (mystrlen);
 }
