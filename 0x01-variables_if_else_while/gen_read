@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# request the filenames
 read -p "Enter filename followed by spaces: " my_files
 
 for filename in $my_files

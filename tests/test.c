@@ -1,29 +1,17 @@
 #include <stdio.h>
-#include <unistd.h>
 
-int _putchar(char c)
+void print(int nb)
 {
-	return (write(1, &c, 1));
-}
-
-void print_rev(char *s)
-{
-    int i = 0;
-
-    while (s[i])
+    printf("%d", nb);
+    nb ++;
+    if (nb < 10) 
     {
-        i++;
+        print(nb);
     }
-    while (i--)
-    {
-        _putchar(s[i]);
-    }
-    _putchar('\n');
 }
-
 
 int main(void)
 {
-    print_rev("Yes");
+    print(4);
     return (0);
 }
