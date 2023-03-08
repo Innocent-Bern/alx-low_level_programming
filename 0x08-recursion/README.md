@@ -34,3 +34,9 @@
 * Description : Funtion that returns 1 if the input integer is a prime number, otherwise return 0
 * @n: input integer
 * Return : int value
+## 100-is_palindrome.c
+* int is_palindrome : Entry point
+* Description : Funtion that returns 1 if a string is a palindrome and 0 if not.
+* @s: input string
+* @pal: input string
+* Return : Void.
