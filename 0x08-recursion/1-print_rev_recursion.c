@@ -20,7 +20,7 @@ int _strlen(char *s, int num)
 }
 void rev(char *s, int myStrLen)
 {
-    if (myStrLen <= 0)
+    if (myStrLen == 0)
     {
         _putchar(*(s + myStrLen));
         return;
