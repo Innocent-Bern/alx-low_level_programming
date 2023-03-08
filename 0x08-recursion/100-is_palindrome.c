@@ -29,7 +29,6 @@ int palCheck(char *s, char *pal, int myStrLen)
             return (1);
         }
         s++;
-        palCheck(s, pal, myStrLen -1 );
     } else 
     {
         return (0);
