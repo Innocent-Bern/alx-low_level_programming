@@ -19,7 +19,7 @@ int _strlen(char *s, int num)
 }
 void rev(char *s, int myStrLen)
 {
-    if (myStrLen <= 0)
+    if (myStrLen == 0)
     {
         putchar(*(s + myStrLen));
         return;
@@ -30,7 +30,7 @@ void rev(char *s, int myStrLen)
 
 void _print_rev_recursion(char *s)
 {
-    int myStrLen = 0;
+    int myStrLen = 1;
 
     myStrLen = _strlen(s, myStrLen);
     rev(s, myStrLen);
