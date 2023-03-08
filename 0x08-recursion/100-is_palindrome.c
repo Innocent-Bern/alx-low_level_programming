@@ -8,15 +8,37 @@
 * Return : Void.
 */
 
-char checkPal(char *pal)
+int _strlen(char *s, int num)
 {
-    if (*pal == '\0')
-        return (*pal);
-    checkPal(pal + 1);
-    return (*pal);
+    if (*s)
+    {
+        num += 1;
+    } else
+    {
+        return (num);
+    }
+    return (_strlen(s+1, num));
+}
+
+int palCheck(char *s, char *pal, int myStrLen)
+{
+    if (*s != '\0' && *s == *(pal + myStrLen))
+    {
+        if (myStrLen == 0)
+        {
+            return (1);
+        }
+        s++;
+        palCheck(s, pal, myStrLen -1 );
+    } else 
+    {
+        return (0);
+    }
+    return (palCheck(s, pal,myStrLen -1));
 }
 int is_palindrome(char *s)
 {
-    putchar(checkPal(s));
-    return (1);
+    int myStrLen = 0;
+    myStrLen= _strlen(s, myStrLen);
+    return (palCheck(s, s,myStrLen - 1));
 }
