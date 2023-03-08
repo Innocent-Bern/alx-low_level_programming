@@ -21,8 +21,17 @@ int _strlen(char *s, int num)
 
 int _strlen_recursion(char *s)
 {
-    int mystrlen = 0;
-    return (_strlen(s, mystrlen));
+    // int mystrlen = 0;
+    // _strlen(s, mystrlen);
+    // return (mystrlen);
+    int mylen = 0;
+
+    if (*s)
+    {
+        mylen++;
+        mylen += _strlen_recursion(s+1);
+    }
+    return (mylen);
 }
 
 int main(void)

@@ -6,20 +6,14 @@
 * @s: input string
 * Return : Void.
 */
-int _strlen(char *s, int num)
-{
-    if (*s == '\0')
-    {
-        return (num);
-    } else
-    {
-        num += 1;
-        _strlen(s+1, num);
-    }
-}
-
 int _strlen_recursion(char *s)
 {
-    int mystrlen = 0;
-    return (_strlen(s, mystrlen));
+    int mylen = 0;
+
+    if (*s)
+    {
+        mylen++;
+        mylen += _strlen_recursion(s+1);
+    }
+    return (mylen);
 }
