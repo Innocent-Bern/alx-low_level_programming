@@ -32,5 +32,5 @@ void _print_rev_recursion(char *s)
     int myStrLen = 0;
 
     myStrLen = _strlen(s, myStrLen);
-    rev(s, myStrLen);
+    rev(s, myStrLen-1);
 }
