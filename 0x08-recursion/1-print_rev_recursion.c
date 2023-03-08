@@ -20,13 +20,11 @@ int _strlen(char *s, int num)
 }
 void rev(char *s, int myStrLen)
 {
-    if (myStrLen == 0)
+    if (myStrLen >= 0)
     {
-        _putchar(*(s + myStrLen));
-        return;
+        putchar(*(s + myStrLen));
+        rev(s, myStrLen - 1);
     }
-    _putchar(*(s + myStrLen));
-    rev(s, myStrLen - 1);
 }
 
 void _print_rev_recursion(char *s)
