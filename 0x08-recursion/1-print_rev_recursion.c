@@ -7,11 +7,32 @@
 * Return : Void.
 */
 
+int _strlen(char *s, int num)
+{
+    if (*s == '\0')
+    {
+        return (num);
+    } else
+    {
+        num += 1;
+    }
+    return (_strlen(s+1, num));
+}
+void rev(char *s, int myStrLen)
+{
+    if (myStrLen <= 0)
+    {
+        _putchar(*(s + myStrLen));
+        return;
+    }
+    _putchar(*(s + myStrLen));
+    rev(s, myStrLen - 1);
+}
+
 void _print_rev_recursion(char *s)
 {
-    if(*s)
-    {
-        _print_rev_recursion(s+1);
-        _putchar(*s);
-    }
+    int myStrLen = 0;
+
+    myStrLen = _strlen(s, myStrLen);
+    rev(s, myStrLen);
 }
