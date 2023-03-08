@@ -29,3 +29,8 @@
 * Description : Funtion that returns the naural square root of a number
 * @n: input integer
 * Return : Void.
+## 6-is_prime_number.c
+* is_prime_number : Entry point
+* Description : Funtion that returns 1 if the input integer is a prime number, otherwise return 0
+* @n: input integer
+* Return : int value

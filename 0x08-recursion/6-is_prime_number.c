@@ -1,17 +1,27 @@
 #include "main.h"
 
 /**
-* _print_rev_recursion : Entry point
-* Description : Funtion that prints a string in reverse.
-* @s: input string
-* Return : Void.
+* is_prime_number : Entry point
+* Description : Funtion that returns 1 if the input integer is a prime number, otherwise return 0
+* @n: input integer
+* Return : int value
 */
-
-void _print_rev_recursion(char *s)
+int checkPrime(int n, int counter)
 {
-    if(*s)
+    if (n % counter == 0)
     {
-        _print_rev_recursion(s+1);
-        _putchar(*s);
+        return (0);
     }
+    if ( counter > (n / 2))
+    {
+        return (1);
+    }
+    return (checkPrime(n, counter + 1));
+}
+int is_prime_number(int n)
+{
+    int counter = 2;
+    if (n <= 1)
+        return (0);
+    return (checkPrime(n, counter));
 }
