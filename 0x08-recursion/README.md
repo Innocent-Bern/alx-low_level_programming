@@ -24,3 +24,8 @@
 * @x: input integer
 * @y: input integer
 * Return : int value
+## 5-sqrt_recursion.c
+* int _sqrt_recursion : Entry point
+* Description : Funtion that returns the naural square root of a number
+* @n: input integer
+* Return : Void.

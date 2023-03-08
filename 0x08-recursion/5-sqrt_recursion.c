@@ -1,17 +1,28 @@
 #include "main.h"
 
 /**
-* _print_rev_recursion : Entry point
-* Description : Funtion that prints a string in reverse.
-* @s: input string
+* int _sqrt_recursion : Entry point
+* Description : Funtion that returns the naural square root of a number
+* @n: input integer
 * Return : Void.
 */
 
-void _print_rev_recursion(char *s)
+int checkCounter(int n, int counter)
 {
-    if(*s)
+    if ((n / counter) == counter && (n % counter) == 0)
     {
-        _print_rev_recursion(s+1);
-        _putchar(*s);
+        return (counter);
     }
+    if (counter > (n/2))
+    {
+        return (-1);
+    }
+    checkCounter(n, counter + 1);
+}
+int _sqrt_recursion(int n)
+{
+    int counter = 1;
+    if (n < 0)
+        return (-1);
+    checkCounter(n, counter);
 }
