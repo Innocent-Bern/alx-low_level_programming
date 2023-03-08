@@ -9,12 +9,12 @@
 
 int _strlen(char *s, int num)
 {
-    if (*s == '\0')
-    {
-        return (num);
-    } else
+    if (*s != '\0')
     {
         num += 1;
+    } else
+    {
+        return (num);
     }
     return (_strlen(s+1, num));
 }
@@ -31,7 +31,7 @@ void rev(char *s, int myStrLen)
 
 void _print_rev_recursion(char *s)
 {
-    int myStrLen = -1;
+    int myStrLen = 0;
 
     myStrLen = _strlen(s, myStrLen);
     rev(s, myStrLen);
