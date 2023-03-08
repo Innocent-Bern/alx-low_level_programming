@@ -40,3 +40,9 @@
 * @s: input string
 * @pal: input string
 * Return : Void.
+## 101-wildcmp.c
+* wildcmp : Entry point
+* Description : Funtion that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0
+* @s1: input string
+* @s2: input string
+* Return : int value
