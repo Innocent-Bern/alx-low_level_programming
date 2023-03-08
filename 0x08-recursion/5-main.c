@@ -16,16 +16,15 @@ int checkCounter(int n, int counter)
     {
         return (-1);
     }
-    checkCounter(n, counter + 1);
+    return (checkCounter(n, counter + 1));
 }
 int _sqrt_recursion(int n)
 {
     int counter = 1;
     if (n < 0)
         return (-1);
-    checkCounter(n, counter);
+    return (checkCounter(n, counter));
 }
-
 int main(void)
 {
     int r;
