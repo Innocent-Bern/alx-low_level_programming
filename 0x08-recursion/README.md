@@ -8,3 +8,8 @@
 * Description : Funtion that prints a string in reverse.
 * @s: input string
 * Return : Void.
+## 2-strlen_recursion.c
+* int _strlen_recursion: Entry point
+* Description : Funtion that prints the length of a string
+* @s: input string
+* Return : Void.
