@@ -24,4 +24,3 @@ int _sqrt_recursion(int n)
         return (-1);
     return (checkCounter(n, counter));
 }
-0
