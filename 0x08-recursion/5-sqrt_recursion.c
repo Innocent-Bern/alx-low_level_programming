@@ -7,22 +7,21 @@
 * Return : Void.
 */
 
+
+
 int checkCounter(int n, int counter)
 {
-    if ((n / counter) == counter && (n % counter) == 0)
+    if (counter * counter == n)
     {
         return (counter);
-    }
-    if (counter > (n/2))
-    {
-        return (-1);
     }
     return (checkCounter(n, counter + 1));
 }
 int _sqrt_recursion(int n)
 {
-    int counter = 1;
+    int counter = 0;
     if (n < 0)
         return (-1);
-    return (checkCounter(n, counter));
+    return (_sqrt_recursion(n, counter));
 }
+0
