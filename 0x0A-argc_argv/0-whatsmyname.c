@@ -7,12 +7,13 @@
 * @argv: argumwnt variable parameter
 * Return : int value
 */
+
 int main( int argc, char *argv[])
 {
     char *p = argv[0];
     while (*p)
     {
-        putchar(*p);
+        _putchar(*p);
         p++;
     }
     _putchar('\n');
