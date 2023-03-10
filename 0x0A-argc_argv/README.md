@@ -17,3 +17,9 @@
 * @argc: argumwent count parameter
 * @argv: argumwnt variable parameter
 * Return : int value
+## 3-mul.c
+* main : Entry point
+* Description: Fuction that multiplies two numbers and prints the result
+* @argc: argumwent count parameter
+* @argv: argumwnt variable parameter
+* Return : int value
