@@ -14,13 +14,16 @@ int main( int argc, char *argv[])
 {
     int arr[] = {25, 10, 5, 2, 1};
     int i = 0;
-    int money = atoi(argv[1]);
+    int money;
     int coins = 0;
 
     if (argc != 2)
     {
         printf("Error\n");
         return (1);
+    } else
+    {
+        money = atoi(argv[1]);
     }
     if (atoi(argv[1]) < 0)
     {
