@@ -2,6 +2,11 @@
 n=1
 for file in *.c
 do
-    echo "$n $file"
-    n=$((n+1))
+    obj=${file%.*}.o
+    gcc -c $file -o $obj
+done
+
+for file in *.o
+do
+    ar rc libmy.a $file
 done
