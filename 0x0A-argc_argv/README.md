@@ -11,3 +11,9 @@
 * @argc: argumwent count parameter
 * @argv: argumwnt variable parameter
 * Return : int value
+## 2-args.c
+* main : Entry point
+* Description: Fuction that prints all the arguments passed to it
+* @argc: argumwent count parameter
+* @argv: argumwnt variable parameter
+* Return : int value
