@@ -23,3 +23,9 @@
 * @argc: argumwent count parameter
 * @argv: argumwnt variable parameter
 * Return : int value
+## 4-add.c
+* main : Entry point
+* Description: Fuction that adds numbers
+* @argc: argumwent count parameter
+* @argv: argumwnt variable parameter
+* Return : int value
