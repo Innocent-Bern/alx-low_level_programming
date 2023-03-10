@@ -29,3 +29,9 @@
 * @argc: argumwent count parameter
 * @argv: argumwnt variable parameter
 * Return : int value
+## 100-change.c
+* main : Entry point
+* Description: A program that prints the minimum number of coins to make change for an amount of money
+* @argc: argumwent count parameter
+* @argv: argumwnt variable parameter
+* Return : int value
