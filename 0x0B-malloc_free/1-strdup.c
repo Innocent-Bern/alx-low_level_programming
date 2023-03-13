@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
+
 
 /**
 * _strdup : Entry point
@@ -9,15 +11,27 @@
 * Return: A pointer to the new string or NULL if string is NULL
 */
 
+int _strlen (char *s)
+{
+    int i = 0;
+    while (*s)
+    {
+        i++;
+        s++;
+    }
+    return (i);
+}
+
 char *_strdup(char *str)
 {
     long unsigned int i = 0;
-    char *newString = malloc(sizeof(str));
+    int mystrlen = _strlen(str);
+    char *newString = malloc(sizeof(char) * mystrlen);
 
     if (str == NULL)
         return (NULL);
-
-    for (i = 0; i <= sizeof(str); i++)
+    
+    for (i = 0; i < mystrlen; i++ )
     {
         newString[i] = str[i];
     }
