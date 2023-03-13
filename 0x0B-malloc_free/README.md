@@ -5,3 +5,8 @@
 * @size: Input integer
 * @c: input string
 * Return: A pointer to the array or NULL if it fails
+## 1-strdup.c
+* _strdup : Entry point
+* Description: Function that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
+* @str: Input string
+* Return: A pointer to the new string or NULL if string is NULL
