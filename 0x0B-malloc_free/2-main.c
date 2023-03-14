@@ -19,7 +19,7 @@ int _strlen(char *s)
         i++;
         if (s[i] == '\0')
         {
-            return (i);
+            break;
         }
     }
     return (i);
@@ -32,6 +32,7 @@ char *str_concat(char *s1, char *s2)
     int len2 = _strlen(s2);
     char *newString = malloc(sizeof(char) * (_strlen(s1) + _strlen(s2)));
 
+    printf("len1 %d\nlem2 %d\n", len1, len2);
     for (i = 0; i < len1; i++)
     {
         newString[i] = s1[i];
