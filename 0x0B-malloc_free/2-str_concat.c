@@ -16,13 +16,9 @@ int _strlen(char *s)
     if (s == NULL)
         return (0);
     
-    for (i = 0; *s ; i++)
+    for (i = 0; s[i] ; i++)
     {
         i++;
-        if (s[i] == '\0')
-        {
-            break;
-        }
     }
     return (i);
 }
