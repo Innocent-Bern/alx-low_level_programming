@@ -13,22 +13,22 @@
 
 int **alloc_grid(int width, int height)
 {
-    int i, y;
-    int **myarr;
+    int **arr;
+    int y, x;
 
-    myarr = malloc(sizeof(int *) * height);
-    for (i = 0; i < height; i++)
+    if (width <= 0 || height <= 0)
     {
-        myarr[i] = malloc(sizeof(int) * width);
+        return (NULL);
     }
-    for (i = 0; i < height; i++)
+    
+    arr = malloc(sizeof(int *) * height);
+
+    for (y = 0; y < height; y++)
     {
-        for (y = 0; y < width; i++)
-        {
-            myarr[i][y] = 0;
-        }
+        arr[y] = malloc(sizeof(int) * width);
     }
-    return (myarr);
+    return (arr);
+
 }
 void print_grid(int **grid, int width, int height)
 {
@@ -57,6 +57,7 @@ void print_grid(int **grid, int width, int height)
 int main(void)
 {
     int **grid;
+
     grid = alloc_grid(6, 4);
     if (grid == NULL)
     {
