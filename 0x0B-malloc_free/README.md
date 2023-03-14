@@ -16,3 +16,9 @@
 * @s1: Input string
 * @s2: input string
 * Return: A pointer to the new string
+## 3-alloc_grid.c
+* alloc_grid : Entry point
+* Description: Function that returns a pointer to a 2 dimensional array of integers.
+* @width: Input integer
+* @height: input height
+* Return: A pointer to a 2 dimensional array of integers
