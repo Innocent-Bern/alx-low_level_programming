@@ -27,12 +27,15 @@ char *_strdup(char *str)
     char *newString = malloc(sizeof(char) * mystrlen);
 
     if (str == NULL)
+        free(newString);
         return (NULL);
     
     for (i = 0; i < mystrlen; i++ )
     {
         newString[i] = str[i];
     }
+    if (newString == NULL)
+        free(newString);
+        return (NULL);
     return (newString);
-    free(newString);
 }
