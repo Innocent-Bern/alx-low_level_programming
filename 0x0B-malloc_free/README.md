@@ -22,3 +22,9 @@
 * @width: Input integer
 * @height: input height
 * Return: A pointer to a 2 dimensional array of integers
+## 4-free_grid.c
+* free_grid : Entry point
+* Description: Function that returns frees a 2d gird created in task 3
+* @grid: Input pointer to grid
+* @height: input height
+* Return: A pointer to a 2 dimensional array of integers
