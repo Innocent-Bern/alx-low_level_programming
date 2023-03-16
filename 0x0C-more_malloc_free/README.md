@@ -11,3 +11,9 @@
 * @s2: input string
 * @n: input integer
 * Return : pointer to memory address of new string
+## 2-calloc.c
+* array_range : Entry point
+* Description : Function that allocates memory of an array using malloc
+* @nmemn: input integer
+* @size: input integer
+* Return : void
