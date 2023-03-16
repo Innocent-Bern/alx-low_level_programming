@@ -7,9 +7,9 @@
  *
  * Return: Always 0.
  */
-int _strlen (char *s)
+unsigned int _strlen (char *s)
 {
-    int i = 0;
+    unsigned int i = 0;
     if (s == NULL)
         return (0);
     for (i = 0; *s; i++)
@@ -23,8 +23,8 @@ int _strlen (char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
     char *rtnstring;
-    int i = 0;
-    int total_len;
+    unsigned int i = 0;
+    unsigned int total_len;
 
     if (_strlen(s2) <= n)
     {
