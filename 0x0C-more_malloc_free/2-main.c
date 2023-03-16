@@ -18,7 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
     if (nmemb == 0 || size == 0)
         return (NULL);
     
-    arrpt = malloc(sizeof(unsigned int *) * size * nmemb);
+    arrpt = malloc(size * nmemb);
 
     if (arrpt == NULL)
     {
@@ -28,7 +28,19 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
     return (arrpt);
 }
-void simple_print_buffer(int *buffer, unsigned int size)
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/**
+ * simple_print_buffer - prints buffer in hexa
+ * @buffer: the address of memory to print
+ * @size: the size of the memory to print
+ *
+ * Return: Nothing.
+ */
+void simple_print_buffer(char *buffer, unsigned int size)
 {
     unsigned int i;
 
@@ -56,10 +68,13 @@ void simple_print_buffer(int *buffer, unsigned int size)
  */
 int main(void)
 {
-    int *a;
+    char *a;
 
-    a = array_range(0, 10);
-    simple_print_buffer(a, 11);
+    a = _calloc(98, sizeof(char));
+    strcpy(a, "Best");
+    strcpy(a + 4, " School! :)\n");
+    a[97] = '!';
+    simple_print_buffer(a, 98);
     free(a);
     return (0);
 }
