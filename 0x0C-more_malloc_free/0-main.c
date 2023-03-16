@@ -8,6 +8,19 @@
  *
  * Return: Always 0.
  */
+void *malloc_checked(unsigned int b)
+{
+    unsigned int *ptr = malloc(b);
+
+    if (ptr == NULL)
+    {
+        *ptr = 98;
+        return (ptr);
+    } else
+    {
+        return (ptr);
+    }
+}
 int main(void)
 {
     char *c;
