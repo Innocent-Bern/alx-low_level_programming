@@ -17,3 +17,9 @@
 * @nmemn: input integer
 * @size: input integer
 * Return : void
+## 3-array_range.c
+* array_range : Entry point
+* Description : Function that creates an array of integers
+* @min: input integer
+* @max: input integer
+* Return : int pointer to the newly created array
