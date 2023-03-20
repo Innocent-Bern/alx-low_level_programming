@@ -1,1 +1,3 @@
-#define PI 3.14159265359
+#if !defined(SIZE)
+#define SIZE 1024
+#endif
