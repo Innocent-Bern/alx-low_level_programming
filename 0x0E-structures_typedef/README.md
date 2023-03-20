@@ -7,3 +7,8 @@
 * @age: input flaot type
 * @owner: input char pointer
 * Return: void
+## 2-print_dog.c
+* print_dog: entry point
+* Description: function that prints a struct dog
+* @d: pointer input to struct dog
+* Return : void
