@@ -8,7 +8,15 @@
  * Return: Always 0.
  */
 
-
+dog_t *new_dog(char *name, float age, char *owner)
+{
+    dog_t another;
+    dog_t *rtndog = &another;
+    rtndog->name = name;
+    rtndog->age = age;
+    rtndog->owner = owner;
+    return (rtndog);
+}
 int main(void)
 {
     dog_t *my_dog;
