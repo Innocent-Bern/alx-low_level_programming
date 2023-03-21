@@ -12,11 +12,17 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
     dog_t another;
     dog_t *rtndog = &another;
+
+	if (rtndog == NULL || name == NULL || age < 0 || owner == NULL)
+		return (NULL);
+
     rtndog->name = name;
     rtndog->age = age;
     rtndog->owner = owner;
+	
     return (rtndog);
 }
+
 int main(void)
 {
     dog_t *my_dog;
