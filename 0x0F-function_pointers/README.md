@@ -6,3 +6,10 @@
 * @f: input pointer function
 * @*: input char pointer for function f
 * Return : void
+## 1-array_iterator.c
+* array_iterator - function that executes a function
+* given as a parameter on each element of an array
+* @array: input array
+* @size: size of the array
+* @action: pointer to function you need to use
+* Return: void
