@@ -13,3 +13,9 @@
 * @size: size of the array
 * @action: pointer to function you need to use
 * Return: void
+## 2-int_index.c
+* int_index - function that searches for an integer
+* @array: input pointer array
+* @size: size of array
+* @cmp: input function to that checks for int
+* Return: Integer
