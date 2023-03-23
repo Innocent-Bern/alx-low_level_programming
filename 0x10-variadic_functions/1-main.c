@@ -22,7 +22,7 @@ if (i + 1 != n && separator != NULL)
 printf("%s ", separator);
 }
 }
-printf("\n")
+printf("\n");
 va_end(numbers);
 }
 
