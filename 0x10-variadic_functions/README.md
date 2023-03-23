@@ -8,3 +8,8 @@
 * @separator: delimeter
 * @n: number of parameters
 * Return: void
+## 2-print_strings.c
+* print_strings - Returns the sum of all its paramters.
+* @n: number of parameters
+* @separator: delimeter
+* Return: void

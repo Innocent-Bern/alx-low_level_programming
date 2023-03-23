@@ -21,7 +21,7 @@ for (i = 0; i < n; i++)
 printf("%d", va_arg(numbers, int));
 if (i + 1 != n && separator != NULL)
 {
-printf("%s ", separator);
+printf("%s", separator);
 }
 }
 printf("\n");
