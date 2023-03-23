@@ -17,16 +17,15 @@ va_start(numbers, n);
 for (i = 0; i < n; i++)
 {
 printf("%d", va_arg(numbers, int));
-if (i + 1 == n)
+if (i + 1 != n && separator != NULL)
 {
-    printf("\n");
-} else if (separator != NULL)
-{
-    printf("%s ", separator);
+printf("%s ", separator);
 }
 }
+printf("\n")
 va_end(numbers);
 }
+
 int main(void)
 {
     print_numbers(", ", 4, 0, 98, -1024, 402);

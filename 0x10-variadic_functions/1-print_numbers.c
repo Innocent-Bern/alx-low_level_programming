@@ -19,14 +19,11 @@ va_start(numbers, n);
 for (i = 0; i < n; i++)
 {
 printf("%d", va_arg(numbers, int));
-if (i + 1 == n)
-{
-printf("\n");
-}
-else if (separator != NULL)
+if (i + 1 != n && separator != NULL)
 {
 printf("%s ", separator);
 }
 }
+printf("\n")
 va_end(numbers);
 }
