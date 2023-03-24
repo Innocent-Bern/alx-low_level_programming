@@ -18,14 +18,8 @@ va_start(myStrings, n);
 
 for (i = 0; i < n; i++)
 {
-if (va_arg(myStrings, char *) != NULL)
-{
-printf("(nil)");
-}
-else
-{
-printf("%s", va_arg(myStrings, char *));
-}
+va_arg(myStrings, char *) != NULL ?
+printf("%s", va_arg(myStrings, char *)) : printf("(nil)");
 
 if (i + 1 != n && separator != NULL)
 {

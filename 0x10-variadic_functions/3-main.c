@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdio.h>
+
 /**
 * print_char - Function that prints characters
 * @characters: list passed to the function
@@ -9,7 +10,6 @@ void print_char(va_list arg)
 {
 	printf("%c", va_arg(arg, int));
 }
-
 
 /**
 * print_string - Function that prints a string
@@ -48,7 +48,6 @@ void print_int(va_list arg)
 * @format: list of types of arguments passed to the function
 * Return: void
 */
-
 void print_all(const char * const format, ...)
 {
 	va_list args;
