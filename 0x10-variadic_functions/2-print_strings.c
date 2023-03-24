@@ -24,7 +24,7 @@ printf("(nil)");
 }
 else
 {
-printf("%s", va_arg(myStrings, char *))
+printf("%s", va_arg(myStrings, char *));
 }
 
 if (i + 1 != n && separator != NULL)
