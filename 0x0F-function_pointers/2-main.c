@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "function_pointers.h"
-
+#include "2-int_index.c"
 /**
  * is_98 - check if a number is equal to 98
  * @elem: the integer to check
@@ -18,19 +18,19 @@ int is_98(int elem)
  *
  * Return: 0 if false, something else otherwise.
  */
-int int_index(int *array, int size, int (*cmp)(int))
-{
-int i, result;
-if (size <= 0)
-	return (-1);
-for (i = 0; i < size; i++)
-{
-result = cmp(array[i]);
-if (result != 0)
-return (i);
-}
-return (-1);
-}
+// int int_index(int *array, int size, int (*cmp)(int))
+// {
+// int i, result;
+// if (size <= 0)
+// 	return (-1);
+// for (i = 0; i < size; i++)
+// {
+// result = cmp(array[i]);
+// if (result != 0)
+// return (i);
+// }
+// return (-1);
+// }
 
 
 int is_strictly_positive(int elem)
