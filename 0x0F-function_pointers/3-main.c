@@ -1,6 +1,6 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include "3-get_op_func.c"
+#include <stdlib.h>
 
 /**
 * main - Enry point

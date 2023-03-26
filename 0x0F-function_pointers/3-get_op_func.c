@@ -1,7 +1,6 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include "3-op_functions.c"
-#include "stdlib.h"
+#include <stdlib.h>
 
 /**
 * get_op_func - function that adds int a and b
