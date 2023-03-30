@@ -3,13 +3,15 @@
 
 /**
 * get_next_node - print content of subsequent nodes
-* @nxt: input pointer
+* @node: input pointer
 * @i: input of type size_t, that tracks the number of nodes
 * Return: unsigned int value of number of nodes
 */
 
 size_t get_next_node(list_t *node, size_t i)
 {
+	if (node == NULL)
+		return (i);
 	if (node->str == NULL)
 	{
 		printf("[0] (nil)\n");
@@ -31,6 +33,7 @@ size_t get_next_node(list_t *node, size_t i)
 size_t print_list(const list_t *h)
 {
 	size_t list_len = 1;
+
 	if (h == NULL)
 		return (0);
 	if (h->str == NULL)
