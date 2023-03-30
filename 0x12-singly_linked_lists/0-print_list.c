@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
-* print_list - function that prints all the elements of a list_t
-* @h: input pointer of type list_t
+* get_next_node - print content of subsequent nodes
+* @nxt: input pointer
 * Return: unsigned int value of number of nodes
 */
 
@@ -28,11 +28,16 @@ size_t get_next_node(struct list_s *nxt)
 
 }
 
+/**
+* print_list - function that prints all the elements of a list_t
+* @h: input pointer of type list_t
+* Return: unsigned int value of number of nodes
+*/
 size_t print_list(const list_t *h)
 {
 	unsigned int list_len = 1;
 	struct list_s sub;
-	
+
 	sub.str = h->str;
 	sub.len = h->len;
 	sub.next = h->next;
