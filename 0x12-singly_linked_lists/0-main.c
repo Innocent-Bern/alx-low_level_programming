@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
+#include "2-add_node.c"
 
 /**
  * main - check the code

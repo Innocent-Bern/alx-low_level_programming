@@ -8,22 +8,17 @@
 * Return: unsigned int value of number of nodes
 */
 
-size_t get_next_node(struct list_s *nxt, size_t i)
+size_t get_next_node(list_t *node, size_t i)
 {
-	struct list_s sub;
-
-	sub.str = nxt->str;
-	sub.len = nxt->len;
-	sub.next = nxt->next;
-	if (sub.str == NULL)
+	if (node->str == NULL)
 	{
 		printf("[0] (nil)\n");
 	} else
 	{
-		printf("[%d] %s\n", sub.len, sub.str);
+		printf("[%d] %s\n", node->len, node->str);
 	}
-	while (sub.next)
-		get_next_node(sub.next, i + 1);
+	while (node->next)
+		get_next_node(node->next, i + 1);
 
 	return (i);
 }
@@ -36,19 +31,17 @@ size_t get_next_node(struct list_s *nxt, size_t i)
 size_t print_list(const list_t *h)
 {
 	size_t list_len = 1;
-	struct list_s sub;
-
-	sub.str = h->str;
-	sub.len = h->len;
-	sub.next = h->next;
-	if (sub.str == NULL)
+	if (h == NULL)
+		return (0);
+	if (h->str == NULL)
 	{
 		printf("[0] (nil)\n");
 	} else
 	{
-		printf("[%d] %s\n", sub.len, sub.str);
+		printf("[%d] %s\n", h->len, h->str);
 	}
-
-	return (list_len + get_next_node(sub.next, list_len));
+	if (h->next == NULL)
+		return (1);
+	return (list_len + get_next_node(h->next, list_len));
 }
 
