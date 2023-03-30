@@ -4,12 +4,12 @@
 /**
 * get_next_node - print content of subsequent nodes
 * @nxt: input pointer
+* @i: input of type size_t, that tracks the number of nodes
 * Return: unsigned int value of number of nodes
 */
 
-size_t get_next_node(struct list_s *nxt)
+size_t get_next_node(struct list_s *nxt, size_t i)
 {
-	size_t i = 0;
 	struct list_s sub;
 
 	sub.str = nxt->str;
@@ -23,9 +23,9 @@ size_t get_next_node(struct list_s *nxt)
 		printf("[%d] %s\n", sub.len, sub.str);
 	}
 	while (sub.next)
-		get_next_node(sub.next);
-	return (i);
+		get_next_node(sub.next, i + 1);
 
+	return (i);
 }
 
 /**
@@ -35,7 +35,7 @@ size_t get_next_node(struct list_s *nxt)
 */
 size_t print_list(const list_t *h)
 {
-	unsigned int list_len = 1;
+	size_t list_len = 1;
 	struct list_s sub;
 
 	sub.str = h->str;
@@ -49,6 +49,6 @@ size_t print_list(const list_t *h)
 		printf("[%d] %s\n", sub.len, sub.str);
 	}
 
-	return (list_len + get_next_node(sub.next));
+	return (list_len + get_next_node(sub.next, list_len));
 }
 
