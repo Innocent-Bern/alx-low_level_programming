@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ $1 -eq  0 ]; then
+	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_list.c -o a && ./a
+elif [ $1 -eq 1 ]; then
+	 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-list_len.c -o b && ./b
+elif [ $1 -eq 2 ]; then
+	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_node.c 0-print_list.c -o c && ./c
+fi

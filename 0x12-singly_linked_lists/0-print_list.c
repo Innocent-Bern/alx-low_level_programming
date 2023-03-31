@@ -43,8 +43,6 @@ size_t print_list(const list_t *h)
 	{
 		printf("[%d] %s\n", h->len, h->str);
 	}
-	if (h->next == NULL)
-		return (1);
 	return (list_len + get_next_node(h->next, list_len));
 }
 
