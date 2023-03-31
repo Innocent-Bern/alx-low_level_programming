@@ -19,7 +19,7 @@ size_t get_next_node(list_t *node, size_t i)
 	{
 		printf("[%d] %s\n", node->len, node->str);
 	}
-	while (node->next)
+	while (node->next != NULL)
 		get_next_node(node->next, i + 1);
 
 	return (i);
@@ -44,7 +44,7 @@ size_t print_list(const list_t *h)
 		printf("[%d] %s\n", h->len, h->str);
 	}
 	if (h->next == NULL)
-		return (1);
+		return (list_len);
 	return (list_len + get_next_node(h->next, list_len));
 }
 
