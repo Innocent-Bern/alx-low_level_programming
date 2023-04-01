@@ -1,0 +1,7 @@
+preinit
+This is a test
+init
+my_atexit2
+my_atexit
+destructor
+fini
