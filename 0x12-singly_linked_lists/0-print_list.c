@@ -19,7 +19,7 @@ size_t get_next_node(list_t *node, size_t i)
 	{
 		printf("[%d] %s\n", node->len, node->str);
 	}
-	while (node->next != NULL)
+	while (node->next)
 		get_next_node(node->next, i + 1);
 
 	return (i);

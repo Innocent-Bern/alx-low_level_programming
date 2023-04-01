@@ -10,7 +10,7 @@
 * Return: address of the new element or null if it failed
 */
 
-list_t * create_new_node(const char *str, list_t *next_node)
+list_t * create_new_node(const char *str, list_t *next_node) 
 {
 	list_t *node = malloc(sizeof(list_t));
 	size_t len = 0;
