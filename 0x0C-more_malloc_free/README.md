@@ -23,3 +23,10 @@
 * @min: input integer
 * @max: input integer
 * Return : int pointer to the newly created array
+## 100-realloc.c
+* _realloc : Entry point
+* Description : Function that reallocates a memory block using malloc and free
+* @ptr: input pointer
+* @old_size: input integer
+* @new_size: input integer
+* Return : void
