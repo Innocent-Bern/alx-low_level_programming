@@ -31,8 +31,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *below_node = get_nodeint_at_index(*head, idx);
 	if (*head == NULL)
 		return (new_node);
-	if (above_node == NULL)
-		return (NULL);
+	if (above_node == NULL && below_node != NULL)
+	{
+		new_node->next = below_node;
+		return (new_node);
+	}
 	above_node->next = new_node;
 	new_node->next = below_node;
 	return (new_node);
