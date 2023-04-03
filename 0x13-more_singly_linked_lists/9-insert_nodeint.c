@@ -30,7 +30,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *above_node = get_nodeint_at_index(*head, idx - 1);
 	listint_t *below_node = get_nodeint_at_index(*head, idx);
 	if (*head == NULL)
+	{
+		*head = new_node;
 		return (new_node);
+	}
 	if (above_node == NULL && below_node != NULL)
 	{
 		new_node->next = below_node;
