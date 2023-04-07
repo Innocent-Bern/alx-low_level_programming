@@ -1,12 +1,12 @@
 # Bit Manipulation
 
 ## Bit operators
-**~ bitwise NOT** takes a number and invets all it's bit
-**& bitwise AND** result is 1 if the both are 1.
-**| bitwise OR** result is 1 if any of the two bits is 1. 
-**^ bitwise XOR Exclusive Or** result of XOR is 1 if the two bits are different.
-**<< left shift** binary operand that shifts the bits of the left operand to the left by the number specified by the right operand
-**>> right shift** binary operand that shifts bits of the left operand to the right by the number of bits specified by the right operand
+**~ bitwise NOT** takes a number and invets all it's bit\n
+**& bitwise AND** result is 1 if the both are 1.\n
+**| bitwise OR** result is 1 if any of the two bits is 1.\n
+**^ bitwise XOR Exclusive Or** result of XOR is 1 if the two bits are different.\n
+**<< left shift** binary operand that shifts the bits of the left operand to the left by the number specified by the right operand\n
+**>> right shift** binary operand that shifts bits of the left operand to the right by the number of bits specified by the right operand\n
 
 ## Conversion of decimal to hexidecimal or base 16
 Base 16 include 0-9 & A-F
