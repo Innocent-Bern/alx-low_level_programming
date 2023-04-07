@@ -1,6 +1,7 @@
 # Bit Manipulation
 
 ## Bit operators
+
 **~ bitwise NOT** takes a number and invets all it's bit.
 
 **& bitwise AND** result is 1 if the both are 1.
