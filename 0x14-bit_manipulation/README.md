@@ -1,12 +1,12 @@
 # Bit Manipulation
 
 ## Bit operators
-* **~ bitwise NOT** takes a number and invets all it's bit
-* **& bitwise AND** result is 1 if the both are 1.
-* **| bitwise OR** result is 1 if any of the two bits is 1. 
-* **^ bitwise XOR Exclusive Or** result of XOR is 1 if the two bits are different.
-* **<< left shift** binary operand that shifts the bits of the left operand to the left by the number specified by the right operand
-* **>> right shift** binary operand that shifts bits of the left operand to the right by the number of bits specified by the right operand
+**~ bitwise NOT** takes a number and invets all it's bit
+**& bitwise AND** result is 1 if the both are 1.
+**| bitwise OR** result is 1 if any of the two bits is 1. 
+**^ bitwise XOR Exclusive Or** result of XOR is 1 if the two bits are different.
+**<< left shift** binary operand that shifts the bits of the left operand to the left by the number specified by the right operand
+**>> right shift** binary operand that shifts bits of the left operand to the right by the number of bits specified by the right operand
 
 ## Conversion of decimal to hexidecimal or base 16
 Base 16 include 0-9 & A-F
@@ -22,5 +22,11 @@ To convert a decimal number lets say 155 to base 16:
 * We continue dividing till we are left with zero. At each step setting the reminder aside.
 * 155/16 gives us 9. So we divide 9/16 which its remainder is zero so we take the value 9
 * To make the hex value we take our remainders and combine the from the last to the first: 0x**9B**
+| 155 to Hex |
+| -----------|
+| Division | Remainder |
+| ---------| ----------|
+| 155 / 16 | 11 - A    |
+| 9 / 16   | 9         |
 
 
