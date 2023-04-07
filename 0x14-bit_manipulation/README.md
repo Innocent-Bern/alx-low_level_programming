@@ -12,8 +12,8 @@
 Base 16 include 0-9 & A-F
 To convert a decimal number lets say 155: 
 * Divide the number by 16 *155/16* 
-* Take the remainder and if it is between 0-9 set it aside as is. If it between 10-16 replace replace it with the corresponding letter from the table below
-|**A**|**B**|**C**|**D**|**E**|**F**|**G**|
+* Take the remainder and if it is between 0-9 set it aside as is. If it between 10-16 replace replace it with the corresponding letter from the table below.
+| **A** | **B** | **C** | **D** | **E** | **F** | **G** |
 |-----|-----|-----|-----|-----|-----|-----|
 | 10  | 11  | 12  | 13  | 14  | 15  | 16  |
 * In our case the remainder of the remainder of 155/16 is 11 so we replace it with the A.
