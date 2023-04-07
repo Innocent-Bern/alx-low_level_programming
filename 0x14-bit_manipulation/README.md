@@ -23,11 +23,10 @@ To convert a decimal number lets say 155 to base 16:
 * 155/16 gives us 9. So we divide 9/16 which its remainder is zero so we take the value 9
 * To make the hex value we take our remainders and combine the from the last to the first: 0x**9B**
 
-| 155 to Hex |
-| -----------|
-| Division | Remainder |
+| **Division** | **Remainder** |
 | ---------| ----------|
-| 155 / 16 | 11 - A    |
+| 155 / 16 | 11 - B    |
 | 9 / 16   | 9         |
+| **Result** | 0x**9B** |
 
 
