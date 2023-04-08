@@ -10,16 +10,6 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	uli len = 0, num = n;
-
-	while (num > 1)
-	{
-		num = num >> 1;
-		len++;
-	}
-	if (index > len)
-		return (-1);
-	len -= index;
-	return (n & (1u << len) ? 1 : 0);
+	return (n & (1u << index) ? 1 : 0);
 }
 
