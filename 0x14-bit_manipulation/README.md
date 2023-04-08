@@ -58,5 +58,5 @@ To convert a decimal number lets say 155 to base 16:
 
 ## Flip bits
 * To flip bits at a given index no matter the state use the **^ Exclusive OR** operator.
-* eg to flip bit of 98 at index 2 would be **98 & (1u << index)**
+* eg to flip bit of 98 at index 2 would be **98 & ^(1u << index)**
 
