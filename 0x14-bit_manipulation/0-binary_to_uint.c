@@ -20,6 +20,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		len++;
 	}
+
 	while (len > 0)
 	{
 		if ((b[i] - '0') == 1)
@@ -27,6 +28,7 @@ unsigned int binary_to_uint(const char *b)
 		i++;
 		len--;
 	}
+
 	return (sum);
 }
 

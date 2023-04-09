@@ -19,7 +19,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		temp = temp >> 1;
 		len++;
 	}
-
 	for (; len >= 0; len--)
 	{
 		res += (m & (1u << len)) ^ (n & (1u << len)) ? 1 : 0;

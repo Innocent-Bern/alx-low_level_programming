@@ -6,6 +6,7 @@
 * @n: number to be printed
 * Return: void
 */
+
 void print_binary(unsigned long int n)
 {
 	uli num = n, len = 0;

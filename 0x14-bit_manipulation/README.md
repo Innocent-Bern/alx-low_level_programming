@@ -5,7 +5,7 @@
 
 ~ bitwise NOT takes a number and invets all it's bit.
 
-**& bitwise AND** result is 1 if the both are 1.
+**& bitwise AND** result is 1 if the both are 1. 
 
 **| bitwise OR** result is 1 if any of the two bits is 1.
 
@@ -49,8 +49,8 @@ To convert a decimal number lets say 155 to base 16:
 * The hex value for **01100010** would be **0x62**
 
 ## Set bits
-* To set bits at a given index use the **& bitwise AND** operator.
-* eg to set bit of 98 at index 2 would be **98 & (1u << index)**
+* To set bits at a given index use the **| bitwise OR ** operator.
+* eg to set bit of 98 at index 2 would be **98 | (1u << index)**
 
 ## Clear bit
 * To clear bit at a give index use the **& bitwise AND** and the **~ bitwise NOT or Compliment** operators
