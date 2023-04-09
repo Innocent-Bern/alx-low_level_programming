@@ -3,7 +3,7 @@
 ## Bit operators
 
 
-**~ bitwise NOT** takes a number and invets all it's bit.
+~ bitwise NOT takes a number and invets all it's bit.
 
 **& bitwise AND** result is 1 if the both are 1.
 
@@ -58,5 +58,5 @@ To convert a decimal number lets say 155 to base 16:
 
 ## Flip bits
 * To flip bits at a given index no matter the state use the **^ Exclusive OR** operator.
-* eg to flip bit of 98 at index 2 would be **98 & ^(1u << index)**
+* eg to flip bit of 98 at index 2 would be **98 ^ (1u << index)**
 
