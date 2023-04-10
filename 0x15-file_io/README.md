@@ -6,12 +6,9 @@
 ## Open()
 Intializes access to the requested file and returns a handle to its associated resources.
 Open call takes three arguments:
-
-	* Path to the requested file
-
-	* Kind of access requested eg read or write
-
-	* Mode / File permision of the associated file: Read, write or execute. Mode is optional.
+* Path to the requested file
+* Kind of access requested eg read or write
+* Mode / File permision of the associated file: Read, write or execute. Mode is optional.
 
 ```
 int open(filename, o-flag, mode)
@@ -19,12 +16,9 @@ int open(filename, o-flag, mode)
 ## Read()
 System call used to access data stored in a file.
 It takes 3 arguments:
-
-	* File descriptor of the file.
-
-	* Buffer where read data is to be stored.
-
-	* Number of bytes to be read from the file
+* File descriptor of the file.
+* Buffer where read data is to be stored.
+* Number of bytes to be read from the file
 
 ```
 int read(fd/filename, buffer, number of bytes)
@@ -34,12 +28,9 @@ It returns the number of bytes read or -1 when an error occurs.
 ## Write()
 Writes data from a buffer provided by the user to a file descriptor.
 Takes 3 arguments:
-
-	* File descriptor.
-
-	* Buffer where the data is store.
-
-	* Number of bytes to be written.
+* File descriptor.
+* Buffer where the data is store.
+* Number of bytes to be written.
 
 ```
 int write(fd/filename, buffer, number of bytes
