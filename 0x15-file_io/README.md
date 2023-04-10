@@ -13,6 +13,8 @@ Open call takes three arguments:
 ```
 int open(filename, o-flag, mode)
 ```
+
+It returns the file descriptor used or -1 if an error occurred.
 ## Read()
 System call used to access data stored in a file.
 

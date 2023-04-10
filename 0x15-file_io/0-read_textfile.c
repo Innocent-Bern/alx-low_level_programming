@@ -1,5 +1,6 @@
 #include "main.h"
 #include <unistd.h>
+#include <fcntl.h>
 
 /**
 * read_textfile - function that reads a texfile and prints
@@ -11,8 +12,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-
-	ssize_t count = write(1, filename, letters);
-	return (count >= 0 ? count : 0);
+	int file_handle = write(1, filename, letters);
+	return (file_handle);
 }
 
