@@ -54,3 +54,4 @@ Returns 0 to indicate file was closed successfully or -1 if an error occurred.
 * File descriptors ---> https://en.wikipedia.org/wiki/File_descriptor
 * Open --> https://en.wikipedia.org/wiki/Open_(system_call)#C_library_POSIX_definition
 * Close ---> https://en.wikipedia.org/wiki/Close_(system_call)
+* Permissions ---> https://linuxcommand.org/lc3_lts0090.php
