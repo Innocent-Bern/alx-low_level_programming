@@ -1,2 +1,3 @@
 alias task_0='gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-read_textfile.c -o a && ./a Requiescat'
 alias task_1='gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-create_file.c -o b && ./b hello world'
+alias task_2='gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-append_text_to_file.c -o c && ./c hello " world!'
