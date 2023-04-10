@@ -15,7 +15,9 @@ int open(filename, o-flag, mode)
 ```
 ## Read()
 System call used to access data stored in a file.
+
 It takes 3 arguments:
+
 * File descriptor of the file.
 * Buffer where read data is to be stored.
 * Number of bytes to be read from the file
@@ -27,6 +29,7 @@ It returns the number of bytes read or -1 when an error occurs.
 
 ## Write()
 Writes data from a buffer provided by the user to a file descriptor.
+
 Takes 3 arguments:
 * File descriptor.
 * Buffer where the data is store.
@@ -39,7 +42,9 @@ Returns the number of bytes written or -1 if an error occurred.
 
 ## Close()
 A system call that closes access to a file descriptor.
+
 It  terminates/flushes buffers, updates the files metadata, de-allocates the resources used by the file and updates the system wide table of files.
+
 Returns 0 to indicate file was closed successfully or -1 if an error occurred.
 
 ### Resurces Used
