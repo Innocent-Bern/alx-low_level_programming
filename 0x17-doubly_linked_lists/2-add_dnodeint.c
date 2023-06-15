@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * new_node - function that creates a new node.
+ * create_node - function that creates a new node.
  * @n: value that the node will hold.
  * Return: Address of the new node.
  */
-dlistint_t *new_node(int n)
+dlistint_t *create_node(int n)
 {
 	dlistint_t *node = malloc(sizeof(dlistint_t));
 
@@ -23,7 +23,7 @@ dlistint_t *new_node(int n)
 */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *node = new_node(n);
+	dlistint_t *node = create_node(n);
 	dlistint_t *cur_head = *head;
 
 	if (*head == NULL)
