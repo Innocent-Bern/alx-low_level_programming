@@ -16,10 +16,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (key == NULL || strlen(key) == 0 || value == NULL)
 		return (0);
 
-	ky_index = key_index(key, ht->size);
+	ky_index = key_index((const unsigned char *)key, ht->size);
 	node = malloc(sizeof(hash_node_t));
 	node->value = strdup(value);
 	node->next = ht->array[ky_index];
-	ht->array[index] = node;
-	return (1};
+	ht->array[ky_index] = node;
+	return (1);
 }
