@@ -19,17 +19,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	ky_index = key_index((const unsigned char *)key, ht->size);
 
+	cur = ht->array[ky_index];
 	node = malloc(sizeof(hash_node_t));
 	node->key = strdup(key);
 	node->value = strdup(value);
-	cur = ht->array[ky_index];
-	
-	if (cur == NULL)
-	{
-		cur = node;
-		return (1);
-	}
-
 	node->next = cur;
 	ht->array[ky_index] = node;
 	return (1);
