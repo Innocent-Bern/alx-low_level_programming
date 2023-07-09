@@ -10,7 +10,7 @@ char *key_value(hash_node_t *node)
 	char str_arr[4096] = "'", *str = &str_arr[0];
 
 	strcat(str, node->key);
-	strcat(str, "': ");
+	strcat(str, "': '");
 	strcat(str, node->value);
 	strcat(str, "', ");
 	return (str);
