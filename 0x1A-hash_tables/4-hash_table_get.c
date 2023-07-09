@@ -5,11 +5,11 @@
  * @ht: pointer to hash table
  * @key: key input
  * Return: pointer to the found key
-*/ 
+*/
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	size_t index;
-	hash_node_t node;
+	hash_node_t *node;
 
 	if (key == NULL || ht == NULL || *key == '\0')
 		return (NULL);
